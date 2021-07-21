@@ -1,0 +1,36 @@
+stackbitVersion: ~0.3.0
+ssgName: vuepress
+nodeVersion: '12'
+pagesDir: docs
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: date
+        name: date
+        label: Date
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: string
+        name: author
+        label: Author
+      - type: string
+        name: featuredimg
+        label: Featuredimg
+      - type: string
+        name: summary
+        label: Summary
+  doc:
+    type: page
+    label: Doc
+    match: '*'
+    fields: []
